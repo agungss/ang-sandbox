@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+<button (click)="counter('minus')">--</button>
+<p>Count : {{ count }}</p>
+<button (click)="counter('add')">++</button>
+<br/>
+
+<app-toggle></app-toggle>
+<br>
+<app-generate></app-generate>
+<br>
+<app-search></app-search>
+<br>
+<app-login [title]="title" (login)="onSubmit($event)"></app-login>

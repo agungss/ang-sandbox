@@ -25,6 +25,7 @@
     <input type="checkbox" id="isMarried" name="isMarried" formControlName="isMarried">
   </p>
 
+
   <p>
     <label for="country">country </label>
     <select name="country" id="country" formControlName="country">
@@ -36,6 +37,6 @@
   </p>
 
   <p>
-    <button type="submit">Submit</button>
+    <button type="submit" [disabled]="!contactForm.valid">Submit</button>
   </p>
 </form>

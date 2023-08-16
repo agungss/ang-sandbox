@@ -11,9 +11,14 @@ export class FormComponent {
 
   // contactForm = new FormGroup({})
 
+  ngOnInit() {
+    // throw new Error('Method not implemented.');
+    
+  }
+
   contactForm = new FormGroup({
-    firstname: new FormControl({value: 'Agung', disabled: false}, [Validators.required,Validators.minLength(2)]), //set default value to 'Agung'
-    lastname: new FormControl({value: 'Sudrajat', disabled: false}, [Validators.required,Validators.minLength(2)]),
+    firstname: new FormControl({value: 'Guest', disabled: true}, [Validators.required,Validators.minLength(2)]), //set default value to 'Agung'
+    lastname: new FormControl({value: 'Guest', disabled: true}, [Validators.required,Validators.minLength(2)]),
     email: new FormControl(),
     gender: new FormControl(),
     isMarried: new FormControl(),

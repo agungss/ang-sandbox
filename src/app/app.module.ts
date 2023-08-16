@@ -9,6 +9,7 @@ import { SearchComponent } from './components/search/search.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
+import { FormComponent } from './components/form/form.component';
 
 
 
@@ -18,7 +19,8 @@ import { LoginComponent } from './components/login/login.component';
     ToggleComponent,
     GenerateComponent,
     SearchComponent,
-    LoginComponent
+    LoginComponent,
+    FormComponent
     
   ],
   imports: [
